@@ -1,0 +1,79 @@
+.board {
+    color: white;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    z-index: 99999;
+    display: flex;
+    transform: translateY(-650px);
+}
+.frame {
+    width: max-content;
+    float: right;
+    padding: 30px;
+    background: rgb(204, 204, 204);
+    border: 10px solid white;
+    border-radius: 150px;
+    margin-right: 20px;
+}
+.board span {
+    font-size: 25px;
+}
+.pink-board {
+    background: linear-gradient(
+    0deg,
+    rgba(164, 9, 9, 1) 12%,
+    rgba(255, 0, 121, 1) 100%
+  );
+}
+.blue-board {
+    background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.green-board {
+    background: #11998e;
+    background: linear-gradient(#38ef7d, #127750);    
+}
+.green-board .frame img {
+    width: 225px;
+}
+.orange-board {
+    background: #ffe53b;
+    background: linear-gradient(180deg, #ffe53b 0%, #ff2525 55%);
+}
+.orange-board .frame img {
+    width: 225px;
+}
+.purple-board {
+    background: #4a69bb;
+    background: linear-gradient(0deg, #4a69bb 9.6%, #cd4dcc 93.6%);
+}
+.purple-board .frame img {
+    width: 200px;
+}
+.grey-board {
+    background-color: #dddcd9;
+    background-image: linear-gradient(180deg, #dddcd9 0%, #515050 59%);
+}
+.grey-board .frame img {
+    width: 200px;
+}
+label {
+    font-family: neosans;
+    order: 1;
+    align-self: flex-start;
+}
+@keyframes fadein {
+    0%{opacity: 0; transform: translateY(-550px);}
+    100%{opacity: 1.0; transform: translateY(0vh);}
+}
+@keyframes fadeout {
+    0%{opacity: 1.0; transform: translateY(0vh);}
+    100%{opacity: 0; transform: translateY(-550px);}
+}

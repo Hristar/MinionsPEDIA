@@ -1,0 +1,107 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 400px;
+}
+.box::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 60px;
+}
+.card img {
+  width: 150px;
+  position: relative;
+  bottom: 30px;
+  transition: 400ms;
+}
+.card img:hover {
+  bottom: 20px;
+  width: 160px;
+}
+.box {
+  text-align: center;
+  width: 180px;
+  padding: 100px 25px 30px 25px;
+  color: white;
+  position: relative;
+  bottom: 100px;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.blue {
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 50px;
+}
+.blue::after {
+  border: 10px solid blue;
+}
+.pink {
+  background: rgb(164, 9, 9);
+  background: linear-gradient(
+    0deg,
+    rgba(164, 9, 9, 1) 12%,
+    rgba(255, 0, 121, 1) 100%
+  );
+  border-radius: 50px;
+  bottom: 93px;
+}
+.pink::after {
+  border: 10px solid rgb(255, 0, 85);
+}
+.green {
+  background: #11998e;
+  background: linear-gradient(#38ef7d, #127750);
+  border-radius: 50px;
+  bottom: 90px;
+}
+.green::after {
+  border: 10px solid darkgreen;
+}
+.orange {
+  background: #ffe53b;
+  background: linear-gradient(180deg, #ffe53b 0%, #ff2525 55%);
+  border-radius: 50px;
+  bottom: 90px;
+}
+.orange::after {
+  border: 10px solid orangered;
+}
+.purple {
+  background: #4a69bb;
+  background: linear-gradient(0deg, #4a69bb 9.6%, #cd4dcc 93.6%);
+}
+.purple::after {
+  border: 10px solid purple;
+}
+.grey {
+  background-color: #dddcd9;
+  background-image: linear-gradient(180deg, #dddcd9 0%, #515050 59%);
+}
+.grey::after {
+  border: 10px solid grey;
+}
+.card3 img {
+  width: 200px;
+}
+.card3 img:hover {
+  width: 210px;
+}
+.card4 img {
+  width: 180px;
+}
+.card4 img:hover {
+  width: 200px;
+}

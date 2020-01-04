@@ -1,0 +1,72 @@
+@import "cards.css";
+@import "board.css";
+html,
+body,
+div,
+nav,
+li,
+ul,
+img,
+h1,
+span,
+footer,
+header {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-family: "lucita";
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+span {
+  font-family: "quicksand";
+  font-weight: bold;
+  transform: translateY(-30px);
+}
+.stack {
+  display: grid;
+  grid-gap: 0 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: end;
+  align-items: end;
+}
+.cover {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  filter: blur(10px);
+  z-index: 99;
+  background: #000000e5;
+  transform: translateY(-100vh);
+}
+.greeting {
+  position: fixed;
+  z-index: 999999;
+  bottom: -425px;
+  left: 40%;
+  animation: bello 5s 1.5s ease-in-out;
+}
+.greeting h1 {
+  position: relative;
+  display: table;
+  left: 100px;
+  top: 30px;
+  border: 5px solid brown;
+  border-radius: 100px;
+  background: white;
+  padding: 20px;
+}
+@keyframes bello {
+  0% {bottom: -425px;}
+  40% {bottom: -100px;}
+  65% {bottom: -100px;}
+  100% {bottom: -425px;}
+}
