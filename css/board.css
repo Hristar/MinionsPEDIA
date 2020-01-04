@@ -70,10 +70,10 @@ label {
     align-self: flex-start;
 }
 @keyframes fadein {
-    0%{opacity: 0; transform: translateY(-550px);}
+    0%{opacity: 0; transform: translateY(-650px);}
     100%{opacity: 1.0; transform: translateY(0vh);}
 }
 @keyframes fadeout {
     0%{opacity: 1.0; transform: translateY(0vh);}
-    100%{opacity: 0; transform: translateY(-550px);}
+    100%{opacity: 0; transform: translateY(-650px);}
 }
