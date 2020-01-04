@@ -52,7 +52,7 @@ span {
   z-index: 999999;
   bottom: -425px;
   left: 40%;
-  animation: bello 5s 1.5s ease-in-out;
+  animation: bello 5s 3s ease-in-out;
 }
 .greeting h1 {
   position: relative;
